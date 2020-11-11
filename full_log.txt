@@ -1,0 +1,112 @@
+# orangepishield_01_nojumpers_3lamps_rdmdisco_fail
+pi@raspberry:~ $ tail -f /var/log/syslog & ola_rdm_discover -l 4 -f -u 1 && killall tail
+[1] 930
+Nov 11 16:16:09 raspberry olad: olad/AvahiDiscoveryAgent.cpp:236: State for OLA Server._http._tcp,_ola, group 0x1cbed38 changed to AVAHI_ENTRY_GROUP_REGISTERING
+Nov 11 16:16:10 raspberry olad: olad/AvahiDiscoveryAgent.cpp:236: State for OLA Server._http._tcp,_ola, group 0x1cbed38 changed to AVAHI_ENTRY_GROUP_ESTABLISHED
+Nov 11 16:16:14 raspberry olad: olad/AvahiDiscoveryAgent.cpp:236: State for OLA Server._http._tcp,_ola, group 0x1cbed38 changed to AVAHI_ENTRY_GROUP_COLLISION
+Nov 11 16:16:14 raspberry olad: olad/AvahiDiscoveryAgent.cpp:435: Service name collision for OLA Server #4 renaming to OLA Server #5
+Nov 11 16:16:14 raspberry olad: olad/AvahiDiscoveryAgent.cpp:334: Adding _ola._sub._http._tcp
+Nov 11 16:16:14 raspberry olad: olad/AvahiDiscoveryAgent.cpp:342: Failed to add _ola._sub._http._tcp
+Nov 11 16:16:14 raspberry olad: olad/AvahiDiscoveryAgent.cpp:236: State for OLA Server._http._tcp,_ola, group 0x1cbed38 changed to AVAHI_ENTRY_GROUP_REGISTERING
+Nov 11 16:16:15 raspberry olad: olad/AvahiDiscoveryAgent.cpp:236: State for OLA Server._http._tcp,_ola, group 0x1cbed38 changed to AVAHI_ENTRY_GROUP_ESTABLISHED
+Nov 11 16:16:21 raspberry systemd[1]: Started Session c2 of user pi.
+Nov 11 16:17:02 raspberry CRON[920]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 4, events 2001, descriptor: 0x1cbc460
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 6, events 2001, descriptor: 0x1cbaff0
+Nov 11 16:17:05 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 11 16:17:05 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 11 16:17:05 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 10
+Nov 11 16:17:06 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 11
+Nov 11 16:17:07 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 12
+Nov 11 16:17:08 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:17:09 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+common/io/EPoller.cpp:306: ss process time was 0.000004
+[1]+  Terminated              tail -f /var/log/syslog
+
+# orangepishield_02_nojumpers_1lamp_rdmdisco_ok
+pi@raspberry:~ $ tail -f /var/log/syslog & ola_rdm_discover -l 4 -f -u 1 && killall tail
+[1] 933
+Nov 11 16:16:15 raspberry olad: olad/AvahiDiscoveryAgent.cpp:236: State for OLA Server._http._tcp,_ola, group 0x1cbed38 changed to AVAHI_ENTRY_GROUP_ESTABLISHED
+Nov 11 16:16:21 raspberry systemd[1]: Started Session c2 of user pi.
+Nov 11 16:17:02 raspberry CRON[920]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Nov 11 16:17:05 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 11 16:17:05 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 11 16:17:05 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 10
+Nov 11 16:17:06 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 11
+Nov 11 16:17:07 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 12
+Nov 11 16:17:08 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:17:09 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 4, events 2001, descriptor: 0xbe4460
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 6, events 2001, descriptor: 0xbe2ff0
+Nov 11 16:20:15 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 11 16:20:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 11 16:20:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 14
+Nov 11 16:20:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 15
+Nov 11 16:20:17 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 16
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:20:18 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 11 16:20:18 raspberry olad: common/rdm/DiscoveryAgent.cpp:337: Muting 2121:000191a7
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:289: Muting 2121:000191a7, TN: 18
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:474: Probably muted device
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:20:19 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+2121:000191a7
+common/io/EPoller.cpp:306: ss process time was 0.000006
+
+# orangepishield_03_alljumpers_3lamps_rdmdisco_fail
+pi@raspberry:~ $ tail -f /var/log/syslog & ola_rdm_discover -l 4 -f -u 1 && killall tail
+[1] 947
+Nov 11 16:20:17 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 16
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:20:18 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 11 16:20:18 raspberry olad: common/rdm/DiscoveryAgent.cpp:337: Muting 2121:000191a7
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:289: Muting 2121:000191a7, TN: 18
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:474: Probably muted device
+Nov 11 16:20:18 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:20:19 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 11 16:28:19 raspberry olad: olad/plugin_api/Universe.cpp:460: Universe 1, RDM request to 2121:000191a7, SD: 0, CC 0x30, TN 0, PID 0x8060, PDL: 10
+Nov 11 16:28:20 raspberry olad: olad/plugin_api/Universe.cpp:460: Universe 1, RDM request to 2121:000191a7, SD: 0, CC 0x30, TN 1, PID 0x8060, PDL: 10
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 4, events 2001, descriptor: 0x1420460
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 6, events 2001, descriptor: 0x141eff0
+Nov 11 16:28:29 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 11 16:28:29 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 11 16:28:29 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 22
+Nov 11 16:28:30 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 23
+Nov 11 16:28:31 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 24
+Nov 11 16:28:32 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:626: Timeout waiting for unmute response
+Nov 11 16:28:32 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:28:32 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+common/io/EPoller.cpp:306: ss process time was 0.000004
+
+# orangepishield_04_alljumpers_1lamp_rdmdisco_ok
+pi@raspberry:~ $ tail -f /var/log/syslog & ola_rdm_discover -l 4 -f -u 1 && killall tail
+[2] 951
+Nov 11 16:28:19 raspberry olad: olad/plugin_api/Universe.cpp:460: Universe 1, RDM request to 2121:000191a7, SD: 0, CC 0x30, TN 0, PID 0x8060, PDL: 10
+Nov 11 16:28:20 raspberry olad: olad/plugin_api/Universe.cpp:460: Universe 1, RDM request to 2121:000191a7, SD: 0, CC 0x30, TN 1, PID 0x8060, PDL: 10
+Nov 11 16:28:29 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 11 16:28:29 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 11 16:28:29 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 22
+Nov 11 16:28:30 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 23
+Nov 11 16:28:31 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 24
+Nov 11 16:28:32 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:626: Timeout waiting for unmute response
+Nov 11 16:28:32 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:28:32 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 4, events 2001, descriptor: 0x14e8460
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 6, events 2001, descriptor: 0x14e6ff0
+Nov 11 16:29:33 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 11 16:29:33 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 11 16:29:33 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 26
+Nov 11 16:29:34 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 27
+Nov 11 16:29:35 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 28
+Nov 11 16:29:36 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 11 16:29:36 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 11 16:29:36 raspberry olad: common/rdm/DiscoveryAgent.cpp:337: Muting 2121:000191a7
+Nov 11 16:29:36 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:289: Muting 2121:000191a7, TN: 30
+Nov 11 16:29:36 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:474: Probably muted device
+Nov 11 16:29:36 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+2121:000191a7
+Nov 11 16:29:37 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+common/io/EPoller.cpp:306: ss process time was 0.000005
+[1]   Terminated              tail -f /var/log/syslog
+[2]+  Terminated              tail -f /var/log/syslog
+
