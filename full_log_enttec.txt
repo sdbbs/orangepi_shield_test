@@ -1,4 +1,4 @@
-# ENTTEC DMX USB PRO capture, olad started with `/usr/bin/olad --syslog --log-level 4 --config-^Cr /var/lib/ola/conf &`:
+# ENTTEC DMX USB PRO capture, olad started with `/usr/bin/olad --syslog --log-level 4 --config-dir /var/lib/ola/conf &`:
 pi@raspberry:~ $ date ; tail -f /var/log/syslog & ola_rdm_discover -l 4 -f -u 1 && killall tail
 Thu Nov 12 10:50:14 CET 2020
 [2] 1044
