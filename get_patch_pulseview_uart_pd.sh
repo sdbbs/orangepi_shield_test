@@ -1,6 +1,16 @@
-# get the original uart protocol decoder for Pulseview:
+#!/usr/bin/env bash
+
+# Note this is a bash script; you can run it under MSYS2 in Windows 10
+
+# get the original UART protocol decoder for Pulseview:
 
 wget https://raw.githubusercontent.com/sigrokproject/libsigrokdecode/e144452/decoders/uart/pd.py
+
+# this script will patch the original pd.py, and add a rough support for two stop bits 
+# (not tested extensively, bugs are to be expected)
+# after this file has been patched, you'll get a patched pd.py of the UART decoder in this directory;
+# just use that to replace (copy over) the installed pd.py of the UART decoder in:
+# C:\Program Files (x86)\sigrok\PulseView\share\libsigrokdecode\decoders\uart\pd.py
 
 # save the patch:
 
@@ -103,3 +113,8 @@ EOF
 # apply the patch
 
 patch <pv_uart_pd.patch
+
+# done - now the pd.py file in this directory is patch; just copy it over:
+# C:\Program Files (x86)\sigrok\PulseView\share\libsigrokdecode\decoders\uart\pd.py
+# ... and then restart PulseView
+

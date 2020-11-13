@@ -1,0 +1,54 @@
+pi@raspberry:~ $ date ; tail -f /var/log/syslog & ola_rdm_discover -l 4 -f -u 1 && killall tail
+Fri Nov 13 09:07:19 CET 2020
+[1] 3037
+Nov 13 09:07:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 13 09:07:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:17 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:18 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:19 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000283
+Nov 13 09:07:19 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 13 09:07:19 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:19 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000068
+Nov 13 09:07:19 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000196
+Nov 13 09:07:19 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000188
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 4, events 2001, descriptor: 0x175b460
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 6, events 2001, descriptor: 0x1759ff0
+Nov 13 09:07:19 raspberry olad: common/io/EPoller.cpp:82: EPOLL_CTL_ADD 26, events 2001, descriptor: 0x199fc68
+Nov 13 09:07:19 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 13 09:07:19 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 13 09:07:19 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 13 09:07:19 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 50
+Nov 13 09:07:19 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 13 09:07:19 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 13 09:07:19 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 13 09:07:19 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000003
+Nov 13 09:07:20 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 13 09:07:20 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 51
+Nov 13 09:07:20 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 13 09:07:20 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000010
+Nov 13 09:07:20 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000011
+Nov 13 09:07:20 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:21 raspberry olad: olad/OlaServer.cpp:385: Garbage collecting
+Nov 13 09:07:21 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:21 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 13 09:07:21 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 52
+Nov 13 09:07:21 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 13 09:07:21 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000008
+Nov 13 09:07:21 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000010
+Nov 13 09:07:21 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 13 09:07:21 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:22 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 13 09:07:22 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - ffff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 13 09:07:22 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 13 09:07:22 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 13 09:07:22 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000010
+Nov 13 09:07:22 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 13 09:07:22 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 13 09:07:23 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+common/io/EPoller.cpp:306: ss process time was 0.000004
+Nov 13 09:07:23 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 13 09:07:23 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:586: Enttec Pro discovery complete:
+Nov 13 09:07:23 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 13 09:07:23 raspberry olad: common/io/EPoller.cpp:116: EPOLL_CTL_DEL 26
+Nov 13 09:07:23 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 13 09:07:23 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000004
