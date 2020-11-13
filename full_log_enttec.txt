@@ -1,0 +1,919 @@
+# ENTTEC DMX USB PRO capture, olad started with `/usr/bin/olad --syslog --log-level 4 --config-^Cr /var/lib/ola/conf &`:
+pi@raspberry:~ $ date ; tail -f /var/log/syslog & ola_rdm_discover -l 4 -f -u 1 && killall tail
+Thu Nov 12 10:50:14 CET 2020
+[2] 1044
+Nov 12 10:50:10 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000173
+Nov 12 10:50:10 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000237
+Nov 12 10:50:11 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:11 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:11 raspberry olad: olad/OlaServer.cpp:385: Garbage collecting
+Nov 12 10:50:11 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000003
+Nov 12 10:50:11 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:12 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000004
+Nov 12 10:50:13 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 4, events 2001, descriptor: 0x3e9460
+common/io/EPoller.cpp:82: EPOLL_CTL_ADD 6, events 2001, descriptor: 0x3e7ff0
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:82: EPOLL_CTL_ADD 25, events 2001, descriptor: 0x184818
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:14 raspberry olad: olad/plugin_api/Universe.cpp:523: Full RDM discovery triggered for universe 1
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:264: Full discovery triggered
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 248
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 249
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000011
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:307: Un-muting all devices, TN: 250
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - ffff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 24
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 23
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:238: Preamble 0 0xfa
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 0000:00000000 - 7fff:ffffffff , 8000:00000000 - ffff:ffffffff
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 8000:00000000 - ffff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 8000:00000000 - ffff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - 7fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - 7fff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 2044 != calculated checksum: 1679
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 0000:00000000 - 3fff:ffffffff , 4000:00000000 - 7fff:ffffffff
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 4000:00000000 - 7fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 4000:00000000 - 7fff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - 3fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - 3fff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 2045 != calculated checksum: 1785
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 0000:00000000 - 1fff:ffffffff , 2000:00000000 - 3fff:ffffffff
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 3fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 3fff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1788 != calculated checksum: 1920
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2000:00000000 - 2fff:ffffffff , 3000:00000000 - 3fff:ffffffff
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 3000:00000000 - 3fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 3000:00000000 - 3fff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:14 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 2fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 2fff:ffffffff
+Nov 12 10:50:14 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:14 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 22
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 21
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:238: Preamble 0 0xff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2000:00000000 - 27ff:ffffffff , 2800:00000000 - 2fff:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2800:00000000 - 2fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2800:00000000 - 2fff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000081
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 27ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 27ff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 23
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 22
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 14
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2000:00000000 - 23ff:ffffffff , 2400:00000000 - 27ff:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2400:00000000 - 27ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2400:00000000 - 27ff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 23ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 23ff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 23
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 22
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 14
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2000:00000000 - 21ff:ffffffff , 2200:00000000 - 23ff:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2200:00000000 - 23ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2200:00000000 - 23ff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 21ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 21ff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 23
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 22
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:238: Preamble 0 0xff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2000:00000000 - 20ff:ffffffff , 2100:00000000 - 21ff:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2100:00000000 - 21ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2100:00000000 - 21ff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1917 != calculated checksum: 1921
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2100:00000000 - 217f:ffffffff , 2180:00000000 - 21ff:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2180:00000000 - 21ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2180:00000000 - 21ff:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000003
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2100:00000000 - 217f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2100:00000000 - 217f:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 2045 != calculated checksum: 1785
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2100:00000000 - 213f:ffffffff , 2140:00000000 - 217f:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2140:00000000 - 217f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2140:00000000 - 217f:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2100:00000000 - 213f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2100:00000000 - 213f:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 30717 != calculated checksum: 1983
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2100:00000000 - 211f:ffffffff , 2120:00000000 - 213f:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 213f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 213f:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 24
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 23
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 15
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2120:00000000 - 212f:ffffffff , 2130:00000000 - 213f:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2130:00000000 - 213f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2130:00000000 - 213f:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 212f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 212f:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 24
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 23
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 15
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2120:00000000 - 2127:ffffffff , 2128:00000000 - 212f:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2128:00000000 - 212f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2128:00000000 - 212f:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 2127:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 2127:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 24
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 23
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 15
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2120:00000000 - 2123:ffffffff , 2124:00000000 - 2127:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2124:00000000 - 2127:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2124:00000000 - 2127:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 2123:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 2123:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 22
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 21
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:246: Preamble separator7 0xa9
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2120:00000000 - 2121:ffffffff , 2122:00000000 - 2123:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2122:00000000 - 2123:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2122:00000000 - 2123:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 2121:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 2121:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1908 != calculated checksum: 1785
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2120:00000000 - 2120:ffffffff , 2121:00000000 - 2121:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000144
+Nov 12 10:50:15 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000021
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000004
+Nov 12 10:50:15 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000290
+Nov 12 10:50:15 raspberry olad: common/io/SelectPoller.cpp:233: ss process time was 0.000179
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000003
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 23
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 22
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:238: Preamble 0 0xff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:7fffffff , 2121:80000000 - 2121:ffffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:80000000 - 2121:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:80000000 - 2121:ffffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000083
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:7fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:7fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1892 != calculated checksum: 1985
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:3fffffff , 2121:40000000 - 2121:7fffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:40000000 - 2121:7fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:40000000 - 2121:7fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:3fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:3fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 22
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 21
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 13
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:1fffffff , 2121:20000000 - 2121:3fffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:20000000 - 2121:3fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:20000000 - 2121:3fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:1fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:1fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 23
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 22
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 14
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:0fffffff , 2121:10000000 - 2121:1fffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:10000000 - 2121:1fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:10000000 - 2121:1fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 28021 != calculated checksum: 1785
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:07ffffff , 2121:08000000 - 2121:0fffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:08000000 - 2121:0fffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:08000000 - 2121:0fffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:07ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:07ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 13815 != calculated checksum: 2051
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:03ffffff , 2121:04000000 - 2121:07ffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:04000000 - 2121:07ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:04000000 - 2121:07ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000008
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:03ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:03ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 30327 != calculated checksum: 1909
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:01ffffff , 2121:02000000 - 2121:03ffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:02000000 - 2121:03ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:02000000 - 2121:03ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000010
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:01ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:01ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:03ffffff, attempt 2, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:03ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 24
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000008
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:461: Multiple discovery responses received, ignoring all but the first.
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 23
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 15
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:01ffffff , 2121:02000000 - 2121:03ffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:02000000 - 2121:03ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:02000000 - 2121:03ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:01ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:01ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1908 != calculated checksum: 1785
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:00ffffff , 2121:01000000 - 2121:01ffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:01000000 - 2121:01ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:01000000 - 2121:01ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:00ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:00ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 2013 != calculated checksum: 1781
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:007fffff , 2121:00800000 - 2121:00ffffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00800000 - 2121:00ffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00800000 - 2121:00ffffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:007fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:007fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:238: Preamble 5 0xee
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:003fffff , 2121:00400000 - 2121:007fffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00400000 - 2121:007fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00400000 - 2121:007fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:003fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:003fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 2028 != calculated checksum: 1864
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:001fffff , 2121:00200000 - 2121:003fffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00200000 - 2121:003fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00200000 - 2121:003fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:001fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:001fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1908 != calculated checksum: 1781
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:000fffff , 2121:00100000 - 2121:001fffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00100000 - 2121:001fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00100000 - 2121:001fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:000fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:000fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 24
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 23
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:238: Preamble 0 0xff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:0007ffff , 2121:00080000 - 2121:000fffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00080000 - 2121:000fffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00080000 - 2121:000fffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0007ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0007ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1917 != calculated checksum: 1913
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:0003ffff , 2121:00040000 - 2121:0007ffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00040000 - 2121:0007ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00040000 - 2121:0007ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0003ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0003ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1788 != calculated checksum: 1920
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:0001ffff , 2121:00020000 - 2121:0003ffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00020000 - 2121:0003ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00020000 - 2121:0003ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0001ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 23
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 22
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 14
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00000000 - 2121:0000ffff , 2121:00010000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00010000 - 2121:0001ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00010000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 2044 != calculated checksum: 1981
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00010000 - 2121:00017fff , 2121:00018000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:0001ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 24
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 23
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:255: Insufficient data remaining, was 15
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00018000 - 2121:0001bfff , 2121:0001c000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:0001c000 - 2121:0001ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:0001c000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:0001bfff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:0001bfff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:0001ffff, attempt 2, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:461: Multiple discovery responses received, ignoring all but the first.
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1908 != calculated checksum: 1785
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00018000 - 2121:0001bfff , 2121:0001c000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:0001c000 - 2121:0001ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:0001c000 - 2121:0001ffff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:0001bfff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:0001bfff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 2044 != calculated checksum: 1785
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00018000 - 2121:00019fff , 2121:0001a000 - 2121:0001bfff
+Nov 12 10:50:15 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:0001a000 - 2121:0001bfff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:0001a000 - 2121:0001bfff
+Nov 12 10:50:15 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:15 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:00019fff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 22
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 21
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:238: Preamble 5 0xf5
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00018000 - 2121:00018fff , 2121:00019000 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00019000 - 2121:00019fff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00019000 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:291: Recovered checksum: 1917 != calculated checksum: 1785
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:386: Collision, splitting into: 2121:00019000 - 2121:000197ff , 2121:00019800 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00019800 - 2121:00019fff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00019800 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:337: Muting 2121:00019c23
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:289: Muting 2121:00019c23, TN: 68
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 29
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:474: Probably muted device
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00019800 - 2121:00019fff, attempt 1, uids found: 1, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00019800 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00019000 - 2121:000197ff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00019000 - 2121:000197ff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:337: Muting 2121:000191a7
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:289: Muting 2121:000191a7, TN: 71
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 29
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:474: Probably muted device
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00019000 - 2121:000197ff, attempt 1, uids found: 1, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00019000 - 2121:000197ff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000004
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 25
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 24
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:337: Muting 2121:0001954e
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:289: Muting 2121:0001954e, TN: 73
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 7, length 26
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 5, length 29
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:474: Probably muted device
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00019000 - 2121:000197ff, attempt 1, uids found: 2, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00019000 - 2121:000197ff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00019000 - 2121:00019fff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00019000 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:00018fff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:00018fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:00019fff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:00019fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:0001bfff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:0001bfff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00018000 - 2121:0001ffff, attempt 2, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00018000 - 2121:0001ffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00010000 - 2121:00017fff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00010000 - 2121:00017fff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00010000 - 2121:0001ffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00010000 - 2121:0001ffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0000ffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0000ffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0001ffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0001ffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0003ffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0003ffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0007ffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0007ffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:000fffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:000fffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:001fffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:001fffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000008
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:003fffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:003fffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000010
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:007fffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:007fffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:00ffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:00ffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000009
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:01ffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:01ffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:03ffffff, attempt 2, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:03ffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:07ffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:07ffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:0fffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:0fffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:1fffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:1fffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:3fffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:3fffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:7fffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:7fffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2121:00000000 - 2121:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2121:00000000 - 2121:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 2120:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 2120:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 2121:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 2121:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 2123:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 2123:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 2127:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 2127:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 212f:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 212f:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2120:00000000 - 213f:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2120:00000000 - 213f:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2100:00000000 - 211f:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2100:00000000 - 211f:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2100:00000000 - 213f:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2100:00000000 - 213f:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2100:00000000 - 217f:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2100:00000000 - 217f:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2100:00000000 - 21ff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2100:00000000 - 21ff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 20ff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 20ff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 21ff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 21ff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 23ff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 23ff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 27ff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 27ff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 2fff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 2fff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 2000:00000000 - 3fff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 2000:00000000 - 3fff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - 1fff:ffffffff, attempt 1, uids found: 0, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - 1fff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - 3fff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - 3fff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - 7fff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - 7fff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000005
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:205: DUB 0000:00000000 - ffff:ffffffff, attempt 1, uids found: 3, failures 0, corrupted 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:330: Sending DUB packet: 0000:00000000 - ffff:ffffffff
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:854: TX: 11, length 38
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000006
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:865: RX: 12, length 0
+2121:000191a7
+2121:0001954e
+2121:00019c23
+common/io/EPoller.cpp:306: ss process time was 0.000003
+Nov 12 10:50:16 raspberry olad: common/rdm/DiscoveryAgent.cpp:219: BranchComplete, got 0
+Nov 12 10:50:16 raspberry olad: plugins/usbpro/EnttecUsbProWidget.cpp:586: Enttec Pro discovery complete: 2121:000191a7,2121:0001954e,2121:00019c23
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000007
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:116: EPOLL_CTL_DEL 25
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000004
+Nov 12 10:50:16 raspberry olad: common/io/EPoller.cpp:306: ss process time was 0.000002
+[2]+  Terminated              tail -f /var/log/syslog
